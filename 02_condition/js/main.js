@@ -108,3 +108,32 @@ if (month > 12) {
     year++;
 }
 document.write(`<p>${day < 10 ? 0 : ''}${day}.${month < 10 ? 0 : ''}${month}.${year}</p>`)
+
+
+
+let x = +prompt("Enter x")
+let y = +prompt("Enter y") 
+if (x == 0 && y == 0) {
+    document.write("Точка знаходиться в початку координат (0, 0)");
+} else if (x == 0) {
+    document.write("Точка знаходиться на осі Y");
+} else if (y == 0) {
+    document.write("Точка знаходиться на осі X");
+} else if (x > 0 && y > 0) {
+    document.write("Точка знаходиться у I чверті");
+} else if (x < 0 && y > 0) {
+    document.write("Точка знаходиться у II чверті");
+} else if (x < 0 && y < 0) {
+    document.write("Точка знаходиться у III чверті");
+} else if (x > 0 && y < 0) {
+    document.write("Точка знаходиться у IV чверті");
+} else {
+    document.write("некоректні дані");
+}
+
+sum = 0
+
+
+// if(){
+//     sum = sum + 2; // sum+=2;
+// }
