@@ -1,0 +1,12 @@
+.container{
+    display: grid;
+    width: 700px;
+    margin: 0 auto;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+}
+.data{
+    border:solid lightblue;
+    border-radius: 20px;
+    padding: 10px 40px;  
+}
