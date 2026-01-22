@@ -1,0 +1,28 @@
+body{
+    /* text-align: center; */
+}
+.figure-5{
+    text-align: center;
+    color:blue;
+    border:solid black;
+    display: inline-block;
+    padding: 5px;
+    
+}
+.figure-6{
+    display: flex;
+    justify-content: space-between;
+    width: 115px;
+    margin: 0 auto;
+
+}
+.figure-6 span:first-child{
+    text-align: left;
+    display: block;
+    flex-grow: 1;
+}
+.figure-6 span:last-child{
+    text-align: right;
+    display: block;
+    flex-grow: 1;
+}

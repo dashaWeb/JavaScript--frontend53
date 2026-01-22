@@ -138,17 +138,19 @@ document.writeln("</div>")
 
 
 
-let number = +prompt("Enter number")
-let counter = true
-for (let i = 2; i < number / 2; i++) {
-    if(number % i == 0){
-        counter = false;
-        break;
-    }
-}
-if(counter){
-    console.log('Prime number')
-}
-else{
-    console.log("Complex number")
-}
+// let number = +prompt("Enter number")
+// let counter = true
+// for (let i = 2; i < number / 2; i++) {
+//     if(number % i == 0){
+//         counter = false;
+//         break;
+//     }
+// }
+// if(counter){
+//     console.log('Prime number')
+// }
+// else{
+//     console.log("Complex number")
+// }
+
+alert('\t 1 - count;\n 2 - sum; 3 - avg')
