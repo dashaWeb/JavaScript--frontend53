@@ -26,3 +26,10 @@ body{
     display: block;
     flex-grow: 1;
 }
+
+.figure-3{
+    color:blue;
+    border:solid black;
+    display: inline-block;
+    padding: 5px;
+}
