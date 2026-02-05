@@ -109,3 +109,13 @@ console.log(date)
 console.log(text3.replace('b','*****'))
 console.log(text.replace('t','*'))
 console.log(text.replaceAll('t','-'))
+'2+2'
+
+function test(...args)
+{
+    console.log(args)
+}
+test('test template',1,2,3,4)
+
+console.log(new Array())
+console.log(new String())
