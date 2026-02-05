@@ -93,12 +93,12 @@ let audi = Object.create(
         brand: {
             value: 'Audi',
             enumerable: true,
-            writable: true,
+            writable: false,
             configurable: false
         },
         year: {
             value: 2024,
-            writable: true,
+            writable: false,
             enumerable: true,
             configurable: false
         },
@@ -106,10 +106,9 @@ let audi = Object.create(
             value: 12455,
             enumerable: false,
             writable: true,
-            configurable: false
+            configurable: true
         },
         color: {
-            value: 'None',
             get: function () {
                 console.log('get color')
                 return 'red'
