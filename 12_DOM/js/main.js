@@ -59,4 +59,5 @@ btn.addEventListener('click',()=>{
 })
 document.querySelector('.material-symbols-outlined').addEventListener('click',()=>{
     document.querySelector('.wrapper').style.height = '0vh'
+    document.querySelector('.wrapper').style.borderRadius = '0vh'
 })

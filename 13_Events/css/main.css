@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    background-color: azure;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.wrapper button{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+.wrapper div{
+    position: absolute;
+    top: 500px;
+    left: 500px;
+    margin-top: -50px;
+    margin-left: -50px;
+    width: 100px;
+    height: 100px;
+    background-color: tomato;
+    /* transition: 0.2s 1s linear; */
+}
