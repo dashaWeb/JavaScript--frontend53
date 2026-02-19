@@ -1,0 +1,27 @@
+.wrapper{
+    width: 800px;
+    border:solid;
+    height: 500px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+button{
+    font-size: 24px;
+    width: 100px;
+    padding: 15px;
+}
+
+.current{
+    margin: 10px;
+    border:solid brown;
+}
+
+.default{
+    font-size: 24px;
+    padding: 10px 40px;
+}
+.active{
+    background-color: rgb(241, 102, 102);
+    box-shadow: 5px 5px 5px #000;
+    margin-bottom: 15px;
+}
