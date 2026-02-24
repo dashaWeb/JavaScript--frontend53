@@ -98,3 +98,5 @@ list.addEventListener('click', function (e) {
 })
 // list.removeAttribute('class')
 // console.log(list.hasAttribute('title'))
+
+console.log(document.querySelector('input').value)
