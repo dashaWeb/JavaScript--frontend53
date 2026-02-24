@@ -1,0 +1,49 @@
+body{
+    background-color: #000;
+}
+
+.gallery{
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.bigImg{
+    border: solid #fff 5px;
+    position: relative;
+}
+#img{
+    width: 100%;
+    display: block;
+}
+#left,
+#right{
+    color:rgb(0,0,0);
+    opacity: .3;
+    font-size: 70px;
+    position: absolute;
+    cursor: pointer;
+    top: 50%;
+    margin-top: -35px;
+}
+#left{
+    left: 10px;
+    
+}
+#right{
+    right: 10px;
+    transform: scaleX(-1);
+}
+.minImg{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    padding: 20px;
+}
+.minImg img{
+    width: 100%;
+    border: solid #fff;
+    cursor: pointer;
+    opacity: .5;
+    transform: scale(1);
+    transition: 1s;
+}
