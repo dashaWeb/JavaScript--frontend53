@@ -1,0 +1,45 @@
+.form-1{
+    width: 400px;
+    padding: 15px;
+    background-color: aquamarine;
+    padding-left: 50px;
+    font-size: 1.5em;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+.form-1 input{
+    margin-top: 10px;
+    height: 25px;
+}
+.remember,.male{
+    display: flex;
+    align-items: center;
+}
+.remember input[type="checkbox"]{
+    margin-left: 15px;
+}
+.male input{
+    margin: 0;
+    margin-left: 15px;
+}
+.male label:last-of-type{
+    margin-left: 15px;
+}
+input[type="color"]
+{
+    height: 50px;
+    width: 50px;
+}
+.form-1 button{
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    font-size: 1.1em;
+    padding: 10px;
+}
+select{
+    font-size: .8em;
+}
