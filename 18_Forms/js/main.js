@@ -57,3 +57,31 @@ let range = my_form.range;
 range.addEventListener('change',()=>{
     console.log(range.value)
 })
+
+let createColor = (rgb) =>{
+    let box = document.createElement('div')
+    box.style.border = 'solid grey 1px';
+    box.style.display = 'flex';
+    box.style.alignItems = 'center';
+
+    let $color = document.createElement('div');
+    $color.style.width = $color.style.height = '50px';
+    $color.style.background = rgb;
+    box.append($color);
+    let p = document.createElement('p');
+    p.textContent = rgb;
+    p.style.textTransform = 'uppercase';
+    p.style.marginLeft = '10px';
+    box.append(p);
+    return box;
+}
+
+let wrapper_color = document.querySelector('.wrapper-color')
+let rgb = document.querySelectorAll('.wrapper-color input')
+let btn = document.querySelector('.wrapper-color button')
+
+btn.addEventListener('click',()=>{
+    let $rgb = `rgb(${rgb[0].value},${rgb[1].value},${rgb[2].value})`;
+    let box = createColor($rgb);
+    wrapper_color.append(box);
+})

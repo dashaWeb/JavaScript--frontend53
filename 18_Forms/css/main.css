@@ -43,3 +43,22 @@ input[type="color"]
 select{
     font-size: .8em;
 }
+
+.wrapper-color{
+    width: 500px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}
+.wrapper-color p{
+    text-align: center;
+    grid-column: span 3;
+}
+.wrapper-color button{
+    display: block;
+    width: 100px;
+    padding: 2px 10px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
