@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page</title>
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        p{
+            display: flex;
+            align-items: center;
+        }
+        .color{
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Number :: <span id = 'number'></span><span id="color"></span></p>
+    </div>
+    
+    <script>
+        let number = document.getElementById('number');
+        window.addEventListener('DOMContentLoaded',()=>{
+            number.textContent = localStorage.getItem('number');
+            window.color.classList.add('color');
+            window.color.style.background = localStorage.getItem('color');
+        })
+
+        window.addEventListener('storage',()=>{
+            number.textContent = localStorage.getItem('number');
+             window.color.style.background = localStorage.getItem('color');
+        })
+    </script>
+</body>
+</html>

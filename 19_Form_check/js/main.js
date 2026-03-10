@@ -129,5 +129,3 @@ str_1 = '656 - 589 - 695'
 console.log(str_1 , '---->', str_1.split(/\D/))
 
 
-
-

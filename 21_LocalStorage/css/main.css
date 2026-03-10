@@ -1,0 +1,32 @@
+ul{
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+}
+li, .color{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+ul li:nth-child(1)
+{
+    background-color: red;
+}
+ul li:nth-child(2)
+{
+    background-color: green;
+}
+ul li:nth-child(3)
+{
+    background-color: blue;
+}
+ul li:nth-child(4)
+{
+    background-color: orange;
+}
+.active{
+    border:solid 2px rgb(62, 90, 52)
+}
