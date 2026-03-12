@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeyPress</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .wrapper {
+            background-color: antiquewhite;
+            height: 100vh;
+            position: relative;
+        }
+
+        .box {
+            width: 50px;
+            height: 50px;
+            background-color: blueviolet;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="box"></div>
+    </div>
+
+    <script>
+
+        let $box = document.querySelector('.box');
+        let $wrapper = document.querySelector('.wrapper')
+        let x = 0, y = 0;
+        document.addEventListener('keydown', (event) => {
+            switch (event.which) {
+                case 38:
+                    y -= 10
+                    break;
+                case 40:
+                    y += 10;
+                    break;
+                case 37:
+                    x -= 10;
+                    break;
+                case 39:
+                    x += 10;
+                    break;
+            }
+            let $upper_width = $wrapper.getBoundingClientRect().width - $box.getBoundingClientRect().width;
+            let $upper_height = $wrapper.getBoundingClientRect().height - $box.getBoundingClientRect().height;
+            if (x < 0) x = 0;
+            if($upper_width < x) x = $upper_width;
+            if (y < 0) y = 0;
+            if($upper_height < y) y = $upper_height
+            $box.style.top = `${y}px`;
+            $box.style.left = `${x}px`;
+        })
+        // window.onkeydown = (e)=>{
+        //     console.log(e.which)
+        // }
+        // up = 38
+        // down = 40
+        // left = 37
+        // right = 39
+    </script>
+
+</body>
+
+</html>
