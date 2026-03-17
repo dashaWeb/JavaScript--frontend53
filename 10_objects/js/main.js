@@ -56,6 +56,7 @@ Car.prototype.color = 'black'
 console.log(ford.color)
 console.log(bmw.color)
 
+
 Car.prototype.getYear = function () { return new Date().getFullYear() - this.year; }
 
 console.log(ford)
