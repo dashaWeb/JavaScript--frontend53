@@ -47,9 +47,9 @@
 let xml = new XMLHttpRequest();
 
 let url = 'https://jsonplaceholder.typicode.com/users'
-xml.open('GET', url);
+xml.open('GET', url,true);
 xml.send()
-// console.log("response :: ",xml.response)
+console.log("response :: ",xml.response)
 xml.onerror = () => {
     console.log(xml.status)
 }
