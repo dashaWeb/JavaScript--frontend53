@@ -100,6 +100,7 @@
 //     })
 
 let url = 'https://api.privatbank.ua/p24api/pubinfo?exchange&coursid=5';
+// let url = 'https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?json';
 
 let promise = new Promise(function(resolve,reject){
     let xml = new XMLHttpRequest();
@@ -133,3 +134,4 @@ function dataShow(data)
         }
     });
 }
+

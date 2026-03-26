@@ -1,0 +1,17 @@
+table,td,th{
+    border: solid 2px;
+}
+table{
+    border-collapse: collapse;
+    box-sizing: border-box;
+    width: 100%;
+}
+.wrapper{
+    margin:50px;
+}
+td,th{
+    padding: 10px;
+}
+th{
+    text-transform: uppercase;
+}
